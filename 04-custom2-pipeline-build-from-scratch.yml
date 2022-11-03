@@ -29,7 +29,7 @@ stages:
            repository: 'custom2aksnginxapp1'
            command: 'buildAndPush'
            Dockerfile: '**/Dockerfile'
-           tags:
+           tags: |
             $(tag)
             $(Build.SourceVersion)
 
